@@ -9,7 +9,7 @@ int main(void){
 
     cout << "Numberog hours worked : ";
     cin >> num_hours_work;
-    cout << 'Enter rate per hour   : ';
+    cout << "Enter rate per hour   : ";
     cin >> rate_per_hour;
 
     if(num_hours_work==0 || rate_per_hour ==0){
@@ -19,7 +19,7 @@ int main(void){
     else if(num_hours_work <= 40){
         gross_pay = rate_per_hour  * num_hours_work;
     }
-    else if{(num_hours_work>40)
+    else if(num_hours_work>40){
          gross_pay = rate_per_hour * 40 + 1.5 * (num_hours_work - 40);
 
 
