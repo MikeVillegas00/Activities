@@ -19,8 +19,8 @@ int main(void){
     else if(num_hours_work <= 40){
         gross_pay = rate_per_hour  * num_hours_work;
     }
-    else if(num_hours_work>40){
-         gross_pay = rate_per_hour * 40 + 1.5 * (num_hours_work - 40);
+    else if(num_hours_work >40){
+        gross_pay = rate_per_hour * 40 + 1.5 * rate_per_hour * (num_hours_work - 40);
 
 
     }

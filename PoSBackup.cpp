@@ -18,7 +18,7 @@ int main(void){
     //INPUT
 
     cout << "Enter your name : ";
-    getline(cin,Cname);
+    cin >> Cname;
     cout << "\n" <<endl;
     cout << "Enter product  : ";
     cin >> P1;
