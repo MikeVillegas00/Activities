@@ -85,7 +85,7 @@ int main(void){
     cout << "Quantity     : " << Q3  << endl;
     cout << "========================================" << endl;
     cout << "VAT (12%)    : " << VAT << endl; 
-    cout << "Total Amount : " << "P" << VAT + t_price << endl;
+    cout << "Total Amount : " << "P" << VAT * t_price << endl;
 
     cout << "\nThank you for your purchase!" << endl;
     
