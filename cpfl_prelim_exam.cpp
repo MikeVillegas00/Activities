@@ -13,8 +13,9 @@ const double tax = 0.12;
 
 int main(void){
 
-    string EmID,Name, Status;
-    int hours_worked,Misc,PD;
+    //Declarations
+    string EmID,Name, Status,PD;
+    int hours_worked,Misc;
     double Gross_Pay,Total,NetP,Tax,Ans;
     double rate_per_hour,TaxGP;
     
@@ -25,15 +26,16 @@ int main(void){
    
     
       //INPUT DISPLAY//
-    cout << "Enter your name               : ";
-    cin >> Name;
-    cout << "Enter Employee number         : ";
+    cout << "Enter your name              : ";
+    getline(cin,Name);
+    cout << "Enter Employee number        : ";
     cin >> EmID;
-    cout << "Date of Payday                : ";
+    cout << "Date of Payday               : ";
     cin >> PD;
-    cout << "Enter number of hours worked  : ";
+    cout << "\n";
+    cout << "Hours worked    : ";
     cin >> hours_worked;
-    cout << "Enter rate per hour           : ";
+    cout << "Hourly pay rate : ";
     cin >> rate_per_hour;
     
     
@@ -68,10 +70,10 @@ int main(void){
     cout << "SSS                 : " << SSS  << endl;
     cout << "Pagibig             : " << PG   << endl;
     cout <<"\n________________________________________" << endl;
-    cout << "Total Net Pay       : " << NetP << endl;
+    cout << "Net Pay : " << NetP << endl;
     
       //Conditions for Employee status
-    if(NetP < 5000.00){
+    if(NetP <= 5000.00){
         cout << "Employee Status : Contractual" << endl;
     }
     else if(NetP >= 5001.00 && NetP <= 10000){
