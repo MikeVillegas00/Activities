@@ -43,16 +43,16 @@ int main(){
     else (hours_worked > 40);{
         Gross_Pay =  rate_per_hour * 40 + 1.5 * rate_per_hour * (hours_worked - 40);
     } 
-    if (Gross_Pay <= 20000 && Gross_Pay >= 1){
+        if (Gross_Pay <= 20000 && Gross_Pay >= 1){
         Tax = Gross_Pay * Tax1;  
-    }
-    else if(Gross_Pay >= 30000 && Gross_Pay <= 40000){
+        }
+        else if(Gross_Pay >= 30000 && Gross_Pay <= 40000){
         Tax = Gross_Pay * Tax2;
-    }
-    else if(Gross_Pay >40000){
+        }
+        else if(Gross_Pay >40000){
         Tax = Gross_Pay * Tax3;
-    }
-    else if(hours_worked ==0 && rate_per_hour ==0){
+        }
+        else if(hours_worked ==0 && rate_per_hour ==0){
         cout << "!!INVALID INPUT!!";
         return 0;
     }
