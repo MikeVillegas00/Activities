@@ -44,12 +44,17 @@ int main(void){
     cout.setf(ios::fixed);
     cout.precision(2); 
 
-    if (hours_worked <= 40){
+    if(hours_worked ==0 && rate_per_hour ==0){
+        cout << "!!INVALID INPUT!!";
+        return 0;
+    }
+    else if (hours_worked <= 40){
         Gross_Pay = rate_per_hour * hours_worked;
     }
     else if (hours_worked > 40){
             Gross_Pay =  rate_per_hour * 40 + 1.5 * rate_per_hour * (hours_worked - 40);
-    }     
+    }  
+       
     //Formula
     Misc = PH + SSS + PG;
     TaxGP = Tax * Gross_Pay;
@@ -82,10 +87,6 @@ int main(void){
     else if(NetP > 10001){
         cout << "Employee Status : Regular " << endl;
     }  
-    else if(hours_worked ==0 && rate_per_hour ==0){
-        cout << "!!INVALID INPUT!!";
-        return 0;
-    }
 
     return 0;
 }
