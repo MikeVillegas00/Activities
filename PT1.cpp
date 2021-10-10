@@ -7,7 +7,7 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main(){
 	int N;
 	int N1, N2, N3, N4, N5;
 
