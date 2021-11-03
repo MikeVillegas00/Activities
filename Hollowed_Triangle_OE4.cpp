@@ -12,6 +12,7 @@ int main()
 
     cout << "Enter the height of the triangle : ";//User Input
     cin >> i;
+    
 
     for (int Trows = 1; Trows <= i; Trows++)//Rows depend on user input
     {   
@@ -36,5 +37,6 @@ int main()
         }
         cout << endl;
     }
+    
     return 0;
 }
