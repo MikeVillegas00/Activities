@@ -146,6 +146,3 @@ void CelsiusToFarenheit(float Denom, float Input3)
     //PRINTED OUTPUT
     cout << "Converted Result is: " << (Input3 * Denom ) + 32 << "°F\n"; 
 }
-
-
-
