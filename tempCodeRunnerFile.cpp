@@ -1,2 +1,1 @@
-
-        //MAIN MENU
+#define MAX 100
