@@ -1,1 +1,1 @@
-#define MAX 100
+0
