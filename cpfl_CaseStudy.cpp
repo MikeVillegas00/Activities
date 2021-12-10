@@ -45,7 +45,7 @@ int main(){
         cout << "[1] Preview Unsorted Array"<< endl;
         cout << "[2] Sorting Array [Ascending]" << endl;
         cout << "[3] Sorting Array [Descending]";
-        cout << "[0] Exit the Program"<< endl;
+        cout << "\n[0] Exit the Program"<< endl;
         cout << "Select Function : ";
         
         cin >> ch;
